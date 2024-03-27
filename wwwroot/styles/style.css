@@ -1,0 +1,217 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    background: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background: rgb(46,58,116);
+    background: linear-gradient(90deg, rgba(46,58,116,1) 65%, rgba(24,36,76,1) 100%);
+    box-shadow: 0px 10px 20px #00000020;
+    padding: 20px;
+}
+
+main {
+    background: rgb(29,36,65);
+    background: linear-gradient(115deg, rgba(29,36,65,1) 50%, rgba(15,19,44,1) 100%);
+    padding: 20px;
+}
+
+footer {
+    background: black;
+    padding: 20px;
+}
+
+.genresList {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 23px;
+}
+
+.genreBtn {
+    background: #ff535e;
+    border-radius: 7px;
+    color: white;
+    padding: 5px 6px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.genreBtn:hover {
+    text-decoration: underline;
+}
+
+.filmsList {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.filmBtn {
+    width: 200px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: rgb(130,95,254);
+    background: radial-gradient(circle, rgba(130,95,254,1) 25%, rgba(100,70,250,1) 75%);
+    border-radius: 6px;
+    padding: 5px;
+    position: relative;
+}
+
+.filmImg {
+    border-radius: 3px;
+}
+
+.filmTitle {
+    font-weight: bold;
+}
+
+.filmVotes {
+    position: absolute;
+    background: #ff535e;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    bottom: -10px;
+    right: 20px;
+}
+
+.pagesList {
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pageBtn {
+    background: gray;
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.pageBtn:hover {
+    background: #ff535e;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+}
+
+.logoWord1 {
+    color: white;
+}
+
+.logoWord2 {
+    color: #ff535e;
+}
+
+.topHeader {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBlock {
+    width: 50%;
+    display: flex;
+    gap:0;
+}
+
+#searchInput {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    background: white
+}
+
+#searchBtn {
+    width: 100px;
+    background: #ff535e;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    text-decoration: underline;
+}
+
+.movieBackground {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.moviePresent {
+    background: rgb(130,95,254);
+    background: radial-gradient(circle, rgba(130,95,254,1) 25%, rgba(100,70,250,1) 75%);
+    padding: 20px;
+    margin: 0 50px;
+    width: 18%;
+    transform: translateY(-50px);
+    border-radius: 15px;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.movieOverview {
+    width: 65%;
+    font-size: 18px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 15px;
+    border: white 1px solid;
+}
+
+@media (max-width: 620px) {
+    .topHeader {
+        flex-direction: column;
+    }
+    .searchBlock {
+        width: 100%;
+    }
+    .filmsList {
+        justify-content: center;
+    }
+    .moviePresent {
+        width: 60%;
+        margin: 0 10px;
+    }
+}
