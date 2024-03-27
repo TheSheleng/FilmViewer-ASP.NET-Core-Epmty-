@@ -8,20 +8,7 @@ using System.Text.Json;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-//app.UseDefaultFiles();
 app.UseStaticFiles();
-
-/*app.Map("/GetGenreList", async () =>
-{
-    var genres = await MovieApi.GetGenreList();
-    return JsonSerializer.Serialize(genres);
-});
-
-app.Map("/GetMoviesByGenre/{GenreId:int}/{Page:int}", async (int GenreId, int Page) =>
-{
-    var movies = await MovieApi.GetMoviesByGenre(GenreId, Page);
-    return JsonSerializer.Serialize(movies);
-});*/
 
 
 app.Map("/{page:int?}", async (HttpContext context, int page = 1) =>
