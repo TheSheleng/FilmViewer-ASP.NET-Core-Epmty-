@@ -125,7 +125,7 @@ namespace FilmViewer.Html
                 BuildBody(
                     await BuildHeader(),
                     HtmlFilms + HtmlPages,
-                    "@ Maid by Shelengovskiy Andrey"),
+                    "@ Made by Shelengovskiy Andrey"),
                 "/styles/style.css", 
                 "/scripts/script.js");
         }
